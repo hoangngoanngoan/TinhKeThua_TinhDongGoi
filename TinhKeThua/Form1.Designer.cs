@@ -45,6 +45,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvSV = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnXSV = new System.Windows.Forms.Button();
             this.btnSSV = new System.Windows.Forms.Button();
             this.btnTKSV = new System.Windows.Forms.Button();
@@ -68,12 +74,6 @@
             this.dtNgaySinhNV = new System.Windows.Forms.DateTimePicker();
             this.txtHoTenNV = new System.Windows.Forms.TextBox();
             this.txtMSNV = new System.Windows.Forms.TextBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSV)).BeginInit();
             this.panel2.SuspendLayout();
@@ -86,9 +86,9 @@
             this.label1.Location = new System.Drawing.Point(4, 58);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 19);
+            this.label1.Size = new System.Drawing.Size(166, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Họ tên:";
+            this.label1.Text = "Họ tên Sinh Viên:";
             // 
             // label2
             // 
@@ -96,7 +96,7 @@
             this.label2.Location = new System.Drawing.Point(4, 99);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 19);
+            this.label2.Size = new System.Drawing.Size(66, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "MSSV:";
             // 
@@ -106,7 +106,7 @@
             this.label3.Location = new System.Drawing.Point(4, 141);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 19);
+            this.label3.Size = new System.Drawing.Size(91, 24);
             this.label3.TabIndex = 1;
             this.label3.Text = "Giới tính:";
             // 
@@ -116,7 +116,7 @@
             this.label4.Location = new System.Drawing.Point(4, 183);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 19);
+            this.label4.Size = new System.Drawing.Size(104, 24);
             this.label4.TabIndex = 1;
             this.label4.Text = "Ngày sinh:";
             // 
@@ -126,7 +126,7 @@
             this.label5.Location = new System.Drawing.Point(4, 271);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(131, 19);
+            this.label5.Size = new System.Drawing.Size(161, 24);
             this.label5.TabIndex = 1;
             this.label5.Text = "Điểm trung bình:";
             // 
@@ -136,30 +136,32 @@
             this.label6.Location = new System.Drawing.Point(4, 227);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 19);
+            this.label6.Size = new System.Drawing.Size(111, 24);
             this.label6.TabIndex = 1;
             this.label6.Text = "Ngành học:";
             // 
             // txtHoTenSV
             // 
-            this.txtHoTenSV.Location = new System.Drawing.Point(136, 58);
+            this.txtHoTenSV.Location = new System.Drawing.Point(177, 58);
             this.txtHoTenSV.Name = "txtHoTenSV";
-            this.txtHoTenSV.Size = new System.Drawing.Size(228, 27);
+            this.txtHoTenSV.Size = new System.Drawing.Size(187, 32);
             this.txtHoTenSV.TabIndex = 2;
             // 
             // txtMSSV
             // 
-            this.txtMSSV.Location = new System.Drawing.Point(136, 96);
+            this.txtMSSV.Location = new System.Drawing.Point(77, 96);
             this.txtMSSV.Name = "txtMSSV";
-            this.txtMSSV.Size = new System.Drawing.Size(228, 27);
+            this.txtMSSV.Size = new System.Drawing.Size(287, 32);
             this.txtMSSV.TabIndex = 2;
             // 
             // dtNgaySinhSV
             // 
-            this.dtNgaySinhSV.Location = new System.Drawing.Point(136, 179);
+            this.dtNgaySinhSV.CustomFormat = "";
+            this.dtNgaySinhSV.Location = new System.Drawing.Point(123, 179);
             this.dtNgaySinhSV.Name = "dtNgaySinhSV";
-            this.dtNgaySinhSV.Size = new System.Drawing.Size(228, 27);
+            this.dtNgaySinhSV.Size = new System.Drawing.Size(241, 32);
             this.dtNgaySinhSV.TabIndex = 3;
+            this.dtNgaySinhSV.Value = new System.DateTime(2024, 9, 20, 21, 56, 41, 0);
             // 
             // cmbNganhHoc
             // 
@@ -170,16 +172,16 @@
             "SQL Server",
             "Power BI",
             "Python"});
-            this.cmbNganhHoc.Location = new System.Drawing.Point(136, 224);
+            this.cmbNganhHoc.Location = new System.Drawing.Point(123, 224);
             this.cmbNganhHoc.Name = "cmbNganhHoc";
-            this.cmbNganhHoc.Size = new System.Drawing.Size(228, 27);
+            this.cmbNganhHoc.Size = new System.Drawing.Size(140, 32);
             this.cmbNganhHoc.TabIndex = 4;
             // 
             // txtDTB
             // 
-            this.txtDTB.Location = new System.Drawing.Point(136, 267);
+            this.txtDTB.Location = new System.Drawing.Point(177, 267);
             this.txtDTB.Name = "txtDTB";
-            this.txtDTB.Size = new System.Drawing.Size(128, 27);
+            this.txtDTB.Size = new System.Drawing.Size(87, 32);
             this.txtDTB.TabIndex = 5;
             // 
             // rdoGioiTinhSVNam
@@ -188,7 +190,7 @@
             this.rdoGioiTinhSVNam.Checked = true;
             this.rdoGioiTinhSVNam.Location = new System.Drawing.Point(164, 139);
             this.rdoGioiTinhSVNam.Name = "rdoGioiTinhSVNam";
-            this.rdoGioiTinhSVNam.Size = new System.Drawing.Size(60, 23);
+            this.rdoGioiTinhSVNam.Size = new System.Drawing.Size(72, 28);
             this.rdoGioiTinhSVNam.TabIndex = 6;
             this.rdoGioiTinhSVNam.TabStop = true;
             this.rdoGioiTinhSVNam.Text = "Nam";
@@ -199,7 +201,7 @@
             this.rdoGioiTinhSVNu.AutoSize = true;
             this.rdoGioiTinhSVNu.Location = new System.Drawing.Point(241, 139);
             this.rdoGioiTinhSVNu.Name = "rdoGioiTinhSVNu";
-            this.rdoGioiTinhSVNu.Size = new System.Drawing.Size(48, 23);
+            this.rdoGioiTinhSVNu.Size = new System.Drawing.Size(56, 28);
             this.rdoGioiTinhSVNu.TabIndex = 6;
             this.rdoGioiTinhSVNu.Text = "Nữ";
             this.rdoGioiTinhSVNu.UseVisualStyleBackColor = true;
@@ -219,7 +221,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(119, 16);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(118, 19);
+            this.label7.Size = new System.Drawing.Size(144, 24);
             this.label7.TabIndex = 8;
             this.label7.Text = "Form Sinh Viên";
             // 
@@ -251,7 +253,7 @@
             // 
             // dgvSV
             // 
-            this.dgvSV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -262,8 +264,58 @@
             this.Column6});
             this.dgvSV.Location = new System.Drawing.Point(0, 365);
             this.dgvSV.Name = "dgvSV";
+            this.dgvSV.RowHeadersWidth = 51;
             this.dgvSV.Size = new System.Drawing.Size(402, 257);
             this.dgvSV.TabIndex = 13;
+            this.dgvSV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSV_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "HoTen";
+            this.Column1.HeaderText = "Họ và tên";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 90;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "MSSV";
+            this.Column2.HeaderText = "MSSV";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 88;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "GioiTinh";
+            this.Column3.HeaderText = "Giới tính";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 74;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "NgaySinh";
+            this.Column4.HeaderText = "Ngày sinh";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 116;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "NganhHoc";
+            this.Column5.HeaderText = "Ngành học";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 122;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "DiemTB";
+            this.Column6.HeaderText = "Điểm trung bình";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 119;
             // 
             // btnXSV
             // 
@@ -273,6 +325,7 @@
             this.btnXSV.TabIndex = 7;
             this.btnXSV.Text = "Xóa";
             this.btnXSV.UseVisualStyleBackColor = true;
+            this.btnXSV.Click += new System.EventHandler(this.btnXSV_Click);
             // 
             // btnSSV
             // 
@@ -325,6 +378,7 @@
             this.dgvNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNV.Location = new System.Drawing.Point(0, 365);
             this.dgvNV.Name = "dgvNV";
+            this.dgvNV.RowHeadersWidth = 51;
             this.dgvNV.Size = new System.Drawing.Size(393, 257);
             this.dgvNV.TabIndex = 13;
             // 
@@ -369,7 +423,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(119, 16);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(124, 19);
+            this.label8.Size = new System.Drawing.Size(152, 24);
             this.label8.TabIndex = 8;
             this.label8.Text = "Form Nhân Viên";
             // 
@@ -379,9 +433,9 @@
             this.label9.Location = new System.Drawing.Point(4, 58);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 19);
+            this.label9.Size = new System.Drawing.Size(174, 24);
             this.label9.TabIndex = 0;
-            this.label9.Text = "Họ tên:";
+            this.label9.Text = "Họ tên Nhân Viên:";
             // 
             // label10
             // 
@@ -389,7 +443,7 @@
             this.label10.Location = new System.Drawing.Point(4, 99);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(57, 19);
+            this.label10.Size = new System.Drawing.Size(68, 24);
             this.label10.TabIndex = 1;
             this.label10.Text = "MSNV:";
             // 
@@ -398,7 +452,7 @@
             this.rdoGioiTinhNVNu.AutoSize = true;
             this.rdoGioiTinhNVNu.Location = new System.Drawing.Point(241, 139);
             this.rdoGioiTinhNVNu.Name = "rdoGioiTinhNVNu";
-            this.rdoGioiTinhNVNu.Size = new System.Drawing.Size(48, 23);
+            this.rdoGioiTinhNVNu.Size = new System.Drawing.Size(56, 28);
             this.rdoGioiTinhNVNu.TabIndex = 6;
             this.rdoGioiTinhNVNu.Text = "Nữ";
             this.rdoGioiTinhNVNu.UseVisualStyleBackColor = true;
@@ -409,7 +463,7 @@
             this.label11.Location = new System.Drawing.Point(4, 141);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 19);
+            this.label11.Size = new System.Drawing.Size(91, 24);
             this.label11.TabIndex = 1;
             this.label11.Text = "Giới tính:";
             // 
@@ -419,7 +473,7 @@
             this.rdoGioiTinhNVNam.Checked = true;
             this.rdoGioiTinhNVNam.Location = new System.Drawing.Point(164, 139);
             this.rdoGioiTinhNVNam.Name = "rdoGioiTinhNVNam";
-            this.rdoGioiTinhNVNam.Size = new System.Drawing.Size(60, 23);
+            this.rdoGioiTinhNVNam.Size = new System.Drawing.Size(72, 28);
             this.rdoGioiTinhNVNam.TabIndex = 6;
             this.rdoGioiTinhNVNam.TabStop = true;
             this.rdoGioiTinhNVNam.Text = "Nam";
@@ -431,7 +485,7 @@
             this.label12.Location = new System.Drawing.Point(4, 183);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(85, 19);
+            this.label12.Size = new System.Drawing.Size(104, 24);
             this.label12.TabIndex = 1;
             this.label12.Text = "Ngày sinh:";
             // 
@@ -439,7 +493,7 @@
             // 
             this.txtLuong.Location = new System.Drawing.Point(123, 267);
             this.txtLuong.Name = "txtLuong";
-            this.txtLuong.Size = new System.Drawing.Size(141, 27);
+            this.txtLuong.Size = new System.Drawing.Size(141, 32);
             this.txtLuong.TabIndex = 5;
             // 
             // label13
@@ -448,7 +502,7 @@
             this.label13.Location = new System.Drawing.Point(4, 271);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(60, 19);
+            this.label13.Size = new System.Drawing.Size(72, 24);
             this.label13.TabIndex = 1;
             this.label13.Text = "Lương:";
             // 
@@ -462,7 +516,7 @@
             "Bảo Vệ "});
             this.cmbChucVu.Location = new System.Drawing.Point(123, 224);
             this.cmbChucVu.Name = "cmbChucVu";
-            this.cmbChucVu.Size = new System.Drawing.Size(241, 27);
+            this.cmbChucVu.Size = new System.Drawing.Size(141, 32);
             this.cmbChucVu.TabIndex = 4;
             // 
             // label14
@@ -471,7 +525,7 @@
             this.label14.Location = new System.Drawing.Point(4, 227);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(73, 19);
+            this.label14.Size = new System.Drawing.Size(88, 24);
             this.label14.TabIndex = 1;
             this.label14.Text = "Chức vụ:";
             // 
@@ -479,62 +533,26 @@
             // 
             this.dtNgaySinhNV.Location = new System.Drawing.Point(123, 179);
             this.dtNgaySinhNV.Name = "dtNgaySinhNV";
-            this.dtNgaySinhNV.Size = new System.Drawing.Size(241, 27);
+            this.dtNgaySinhNV.Size = new System.Drawing.Size(241, 32);
             this.dtNgaySinhNV.TabIndex = 3;
             // 
             // txtHoTenNV
             // 
-            this.txtHoTenNV.Location = new System.Drawing.Point(123, 58);
+            this.txtHoTenNV.Location = new System.Drawing.Point(185, 58);
             this.txtHoTenNV.Name = "txtHoTenNV";
-            this.txtHoTenNV.Size = new System.Drawing.Size(241, 27);
+            this.txtHoTenNV.Size = new System.Drawing.Size(179, 32);
             this.txtHoTenNV.TabIndex = 2;
             // 
             // txtMSNV
             // 
-            this.txtMSNV.Location = new System.Drawing.Point(123, 96);
+            this.txtMSNV.Location = new System.Drawing.Point(79, 96);
             this.txtMSNV.Name = "txtMSNV";
-            this.txtMSNV.Size = new System.Drawing.Size(241, 27);
+            this.txtMSNV.Size = new System.Drawing.Size(285, 32);
             this.txtMSNV.TabIndex = 2;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "HoTen";
-            this.Column1.HeaderText = "Họ và tên";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "MSSV";
-            this.Column2.HeaderText = "MSSV";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "GioiTinh";
-            this.Column3.HeaderText = "Giới tính";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "NgaySinh";
-            this.Column4.HeaderText = "Ngày sinh";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "NganhHoc";
-            this.Column5.HeaderText = "Ngành học";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "DiemTB";
-            this.Column6.HeaderText = "Điểm trung bình";
-            this.Column6.Name = "Column6";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 646);
             this.Controls.Add(this.panel2);
