@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/TinhKeThua/Form1.resx
+/TinhKeThua/Form1.Designer.cs
+/TinhKeThua/Form1.cs
